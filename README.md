@@ -1,1 +1,4 @@
 # DSA-Project
+MAKE-SET (x), we create a new linked list whose only object is x.
+For FIND-SET(x), we just follow the pointer from x back to its set object and then return the member in the object that head points to.
+UNION (x, y) unites the dynamic sets that contain x and y, say Sx and Sy, into a new set that is the union of these two sets. We assume that the two sets are disjoint prior to the operation. The representative of the resulting set is any member of Sx U Sy, although many implementations of UNION specifically choose the representative of either Sx or Sy as the new representative. Since we require the sets in the collection to be disjoint, conceptually we destroy sets Sx and Sy, removing them from the collection S. In practice, we often absorb the elements of one of the sets into the other set.
